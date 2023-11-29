@@ -47,11 +47,9 @@ main()
         const roundArray = data.split('\n').map(x => x.split(' '))
         
         const scoreArray = roundArray.map(x => totalScore(x[0], x[1]))
-        console.log(roundArray)
-        console.log(scoreArray)
-
         const total = scoreArray.reduce((a, b) => a + b, 0);
-        console.log(total) // 10313 INCORRECT
+
+        console.log(total) // 10310
     })
     .catch((err) => {
         console.error(err);
